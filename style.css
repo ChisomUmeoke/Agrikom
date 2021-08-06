@@ -11,13 +11,13 @@
     overflow-x: hidden;
   }
 
-  .nav{
-      padding:1em 2em 1em 16em;
-      margin-top:1em;
-      border:1em;
-      display:flex;
-      justify-content: space-between;
-      width:90vw;
+  .nav{    
+     padding:1em 2em 1em 16em;
+     margin-top:1em;
+     border:1em;
+     display:flex;
+     justify-content: space-between;
+     width:90vw;
   }
   .logotext{
       font-size: 2rem;
@@ -103,7 +103,6 @@
 }
 .gallery1, .gallery2, .gallery3{
     margin-top:7em;
-   
     margin-bottom:-6em;
     border-radius: 2em;
 }
@@ -112,6 +111,7 @@ margin-left:5em;
 }
 .gallery1{
     margin-left:18em;
+   
     }
     .gallery3{
         margin-right:9em;
@@ -226,19 +226,20 @@ margin-left:5em;
 
 
  .closedimg2{
-     margin-left:10em;
+     margin-left:8.25em;
  }
  .closedimg1{
      margin-left: 3em;
+     
  }
  .closedimg4{
-     margin-right:5em;
+     margin-right:4em;
  }
  .closedimg3{
-    margin-right:3.45em;
+    margin-right:1.75em;
  }
  .closebtn{
-     margin: 9em 2em 0 -16em;
+     margin: 9em 2em 0 -17em;
     color:#FFFFFF;
     background-color:#F7C35F;
     padding:2em 3em;
@@ -502,10 +503,15 @@ border-radius:0.25em;
 }
 
 
-@media only screen and (max-width: 480px) {
-      .nav{
+@media only screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    } 
+    
+    .nav{
         display:flex;
         justify-content: space-between;
+        padding:1em;
     }
 
 
@@ -532,7 +538,7 @@ border-radius:0.25em;
       .hamburger {
         display: block;
         cursor: pointer;
-        margin: auto 3em;
+        margin: auto 0.25em;
       }
     
       .hamburger.active .bar:nth-child(2) {
@@ -557,12 +563,17 @@ border-radius:0.25em;
         font-weight: 600;
   
     }
+
+  .head-icon{
+    display:none;
+}
     
     .navlink{
         margin-left:1em;
     }
     .agrikom{
         width:50%;
+        margin-left:1.15em;
     }
     
       .base{
@@ -571,14 +582,14 @@ border-radius:0.25em;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-       opacity:90%;
-       width:100vw;
-        height:85vh;
-        padding:3em;
+        opacity:90%;
+        width:100vw;
+        height:55vh;
+        padding: 5em 3em;
       }
 
       .baseh1{
-        font-size:2rem;
+        font-size:1.75rem;
         max-width: none;
         display:block;
         margin:1em auto; 
@@ -603,28 +614,301 @@ border-radius:0.25em;
 
     .gallery{
         flex-direction: column;
+    }
 
-    }
     .gallery1{
-        width:55%;
+        width:none;
+        
     }
-    .gallery1, .gallery2, .gallery3{
-    margin-top:7em;
-    margin-left:5em;
-    margin-bottom:0.15em;
+    .gallery1,.gallery3{
+    margin:2em 0 1em 3.85em;
+   
     border-radius: 2em;
+    width:80%;
+}
+
+.gallery2 {
+    width:110%;
+    display:block;
+    margin: 4em 0 1em 3.75em;
 }
 
 .gallery3{
-    width:70%;
+    width:110%;
+    margin-bottom:4em;
+}
+
+.gallerybtn{
+    margin:32em -42em  22em;
+    color:#255946;
+    padding:2em 15em;
+    border:none;
+    border-radius: 0.25em;
+    margin-bottom:5em;
+    position:absolute;
 }
   .machine{
-      flex-direction: column;;
+      flex-direction: column;
+      margin-top:9em;
+  }  
+  .price{
+    margin: -7em 0  0 7em ;
+    position:absolute; 
+  }
+ 
+
+  .img-g{    
+    width:60%;   
+    margin:-5em 0 1em 9em;
+}
+.logo-text{
+    background-color:white;
+   width:82.66vw;
+   padding:5em 0.85em 0em 2em ;
+   margin: 1em 0 0 3em;
+}
+.agro{
+    font-size:1.38em;
+}
+
+.grouptext{
+   display: none;
+}
+
+.iconbtn{
+    display: none;   
+}
+.closedp{
+    margin-top:0;
+
+}
+.closedimg{
+    margin-top:1em;
+}
+
+.closedimg1{
+    margin-left:1em; 
+   
+}
+
+.closedimg2{
+    margin-left:0.55em;
+}
+
+.closedimg4{
+    margin-right:1em;
+}
+.closedimg3{
+   margin-right:1em;
+}
+
+.testimonial{
+    margin-left:1em
+}
+
+.greenbgimg{
+    margin-left:3em;
+}
+
+.exserv{
+max-width:60%;
+}
+.wrap{
+    padding:3em 1em 5em 1em;
+    width:70%;
+    border-radius: 0.33em;
+    background-color: #F6F5F2;
+    margin:2em 2em 0 3.25em;
+}
+
+.section3{
+    flex-direction: column;
+    margin-left:0.25em;
+    margin-bottom:1em;
+}
+
+.lclosed1{
+    font-size:1.35em;
+    color:#6E7673;
+  }
+  
+  .l-bold{
+  font-size:1.55em;
+  color:#255946;
+  margin-right:1em;
+  }
+  
+  .lpara{
+      max-width:30em;
+      margin-top:1em;
+      color:#6E7673;
+      font-size:0.95em;
+      line-height: 15px;
+  }
+  
+.lead{
+ width:80px;
+}
+ .footer, .logowrap, .wrap3, .l-evidence, .wrap1,.agric, .closebtn{
+    display: none;
+}
+}
+
+
+@media only screen and (max-width: 480px) {
+    body{
+        overflow-x: hidden;
+    } 
+    
+    .nav{
+        display:flex;
+        justify-content: space-between;
+        padding:1em;
+    }
+
+
+        .navtext {
+        font-size:1rem;
+        position: absolute;
+        left: -100%;
+        top: 2em;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+      }
+    
+      .navtext.active {
+        left: 0;
+      }
+      .hamburger {
+        display: block;
+        cursor: pointer;
+        margin: auto 0.25em;
+      }
+    
+      .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+      }
+    
+      .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(6px) rotate(45deg);
+        -ms-transform: translateY(6px) rotate(45deg);
+        transform: translateY(6px) rotate(45deg);
+      }
+    
+      .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        -ms-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+      }
+
+      .logotext{
+        font-size: 1rem;
+        color:#255946;
+        font-weight: 600;
+  
+    }
+
+  .head-icon{
+    display:none;
+}
+    
+    .navlink{
+        margin-left:1em;
+    }
+    .agrikom{
+        width:50%;
+        margin-left:1.15em;
+    }
+    
+      .base{
+        background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url(Images/base.png) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        opacity:90%;
+        width:100vw;
+        height:55vh;
+        padding:3em;
+      }
+
+      .baseh1{
+        font-size:1.55rem;
+        max-width: none;
+        display:block;
+        margin:1em auto; 
+    }
+
+
+    .basep1,.basep2{
+        margin:auto;
+        font-size:1.05rem;
+        display:block;
+        color:white;
+    }
+
+    .basebtn{
+        padding:1em 4em;
+        background-color:#F7C35F;
+        border:none;
+        margin: 2em auto;
+        color:white;
+        border-radius: 0.25em;
+    }
+
+    .gallery{
+        flex-direction: column;
+    }
+
+    .gallery1{
+        width:none;
+    }
+
+
+    .gallery1,.gallery3{
+    margin-top:7em;
+    margin-left:2.65em;
+    margin-bottom:0.15em;
+    border-radius: 2em;
+    width:80%;
+}
+
+.gallery2 {
+    width:110%;
+    display:block;
+    margin: 7em 0 1em 2.65em;
+}
+
+.gallery3{
+    width:110%;
+    margin-bottom:4em;
+}
+
+.gallerybtn{
+    margin:16em -21em 10em;
+    color:#255946;
+    padding:1.25em 5em;
+    border:none;
+    border-radius: 0.25em;
+    margin-bottom:5em;
+    position:absolute;
+}
+
+  .machine{
+      flex-direction: column;
+      margin-top:9em;
   }  
   .price{
     margin: -10em 0 6em;
-    position:absolute;
-     
+    position:absolute; 
   }
  
 
@@ -634,29 +918,31 @@ border-radius:0.25em;
 }
 .logo-text{
     background-color:white;
-   display:block;
-   margin:auto;
-   width:90vw;
+   width:82.66vw;
+   padding:5em 0.85em 0em 2em ;
+   margin: 1em;
 }
 
 .grouptext{
-    border-top: none;
-    border-bottom: none;
-    padding:2em;
-    margin: 1em;
-    font-size:0.75em;
-    color:#255946;
+   display: none;
 }
 
-.grouptext{
-    margin-left:3em;
+.iconbtn{
+    display: none;   
+}
+.closedp{
+    margin-top:0;
+
+}
+.closedimg{
+    margin-top:1em;
 }
 
 .closedimg1{
-    margin-left:1em;
-    
-    
+    margin-left:1em; 
+    width:60%;
 }
+
 .closedimg2{
     margin-left:1em;
 }
@@ -667,23 +953,58 @@ border-radius:0.25em;
 .closedimg3{
    margin-right:1em;
 }
-.closebtn{
-    font-size:0.45em;
-    margin-right:4em;
-    padding:1em 3em;
-}
+
 .testimonial{
-    margin-left:2em
+    margin-left:1em
+}
+
+.greenbgimg{
+    margin-left:3em;
 }
 
 .exserv{
 max-width:60%;
 }
+.wrap{
+    padding:3em 1em 2em 1em;
+    width:70%;
+    border-radius: 0.33em;
+    background-color: #F6F5F2;
+    margin:2em 2em 0 3.25em;
+}
+.break{
+    display:none;
+}
+
 .section3{
     flex-direction: column;
+    margin-left:2em;
+    margin-bottom:1em;
 }
+
+.lclosed1{
+    font-size:0.65em;
+    color:#6E7673;
+  }
+  
+  .l-bold{
+  font-size:1.55em;
+  color:#255946;
+  margin-right:1em;
+  }
+  
+  .lpara{
+      max-width:30em;
+      margin-top:1em;
+      color:#6E7673;
+      font-size:0.65em;
+      line-height: 15px;
+  }
 .lead{
  width:80px;
+}
+ .footer, .logowrap, .wrap3, .l-evidence, .wrap1,.agric, .closebtn{
+    display: none;
 }
     
 }
@@ -696,11 +1017,19 @@ max-width:60%;
         background-size: cover;
        opacity:90%;
        width:110vw;
-        height:105vh;
+        height:65vh;
         padding:3em;
       }
       .gallery, .greenbg{
         width:110vw;
     }
-    
+    .gallerybtn{
+        margin:14em -18em 10em;
+        color:#255946;
+        padding:1.25em 4em;
+        border:none;
+        border-radius: 0.25em;
+        margin-bottom:5em;
+        position:absolute;
+    }
 }
