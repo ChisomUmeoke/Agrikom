@@ -12,11 +12,12 @@
   }
 
   .nav{
-      padding:1em;
+      padding:1em 2em 1em 16em;
       margin-top:1em;
       border:1em;
       display:flex;
-      justify-content: space-around;
+      justify-content: space-between;
+      width:90vw;
   }
   .logotext{
       font-size: 2rem;
@@ -25,6 +26,10 @@
       margin-bottom:4em;
 
   }
+  .agricom{
+    margin-right:1.15em;
+  }
+
   .img-icon{
       margin-right:1.15em;
   }
@@ -63,21 +68,21 @@
 
   .basep1{
       font-size:1rem;
-      margin-left:20em;
+      margin-left:13em;
       color:white;
       margin-top:3em;
   }
    .basep2{
        font-size:1.25rem;
        color:white;
-       margin-left:16em;
+       margin-left:10em;
    }
 
 
   .baseh1{
       font-size:4rem;
       color:white;
-      margin-left:4.95em;
+      margin-left:3em;
       margin-bottom: 0;
       margin-top: 0;
   }
@@ -86,7 +91,7 @@
       padding:1em 4em;
       background-color:#F7C35F;
       border:none;
-      margin-left:23.65em;
+      margin-left:14.65em;
       color:white;
       border-radius: 0.25em;
   }
