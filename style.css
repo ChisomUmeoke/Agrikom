@@ -242,10 +242,24 @@ margin-left:5em;
      margin: 9em 2em 0 -17em;
     color:#FFFFFF;
     background-color:#F7C35F;
-    padding:2em 3em;
+    padding:1.55em 7em 1em 2em;
     border:none;
     position: absolute;
     border-radius: 0.75em;
+    font-size:1em;
+    line-height: 1.55em;
+}
+
+.closedarrow{
+ border:0.25em solid white;
+ margin: 10.70em 9em 0 -9em;
+ position: absolute;
+  background-color:transparent;
+ border-radius: 50%;
+ border: 1px solid white;
+ color:white;
+padding:0.65em 0.35em;
+ position: absolute;
 }
 
 .greenbg{
@@ -502,8 +516,255 @@ border-radius:0.25em;
     color:#F7C35F;
 }
 
+@media only screen and (max-device-width : 1024px) {
+    body{
+        overflow-x: hidden;
+    } 
+    
+    .nav{
+        display:flex;
+        justify-content: space-between;
+        padding:1em;
+    }
 
-@media only screen and (max-width: 768px) {
+
+        .navtext {
+        font-size:1rem;
+        position: absolute;
+        left: -100%;
+        top: 2em;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+      }
+    
+      .navtext.active {
+        left: 0;
+      }
+      .hamburger {
+        display: block;
+        cursor: pointer;
+        margin: auto 0.25em;
+      }
+    
+      .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+      }
+    
+      .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(6px) rotate(45deg);
+        -ms-transform: translateY(6px) rotate(45deg);
+        transform: translateY(6px) rotate(45deg);
+      }
+    
+      .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        -ms-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+      }
+
+      .logotext{
+        font-size: 1rem;
+        color:#255946;
+        font-weight: 600;
+  
+    }
+
+  .head-icon{
+    display:none;
+}
+    
+    .navlink{
+        margin-left:1em;
+    }
+    
+      .base{
+        background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url(Images/base.png) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        opacity:90%;
+        width:100vw;
+        height:45vh;
+        padding: 5em 3em 1em 5em;
+      }
+
+      .baseh1{
+        font-size:2.75rem;
+        max-width: none;
+        display:block;
+        margin:1em auto; 
+    }
+
+
+    .basep1,.basep2{
+        margin:auto;
+        font-size:2.25rem;
+        display:block;
+        color:white;
+    }
+
+    .basebtn{
+        padding:1em 4em;
+        background-color:#F7C35F;
+        border:none;
+        margin: 2em auto;
+        color:white;
+        border-radius: 0.25em;
+    }
+
+    .gallery{
+        flex-direction: column;
+    }
+
+    .gallery1{
+        width:none;
+        
+    }
+    .gallery1,.gallery3{
+    margin:2em 0 1em 3.85em;
+   
+    border-radius: 2em;
+    width:80%;
+}
+
+.gallery2 {
+    width:110%;
+    display:block;
+    margin: 4em 0 1em 3.75em;
+}
+
+.gallery3{
+    width:110%;
+    margin-bottom:4em;
+}
+
+.gallerybtn{
+    margin:10em -42em  22em;
+    color:#255946;
+    padding:2em 15em;
+    border:none;
+    border-radius: 0.25em;
+    margin-bottom:5em;
+    position:absolute;
+}
+  .machine{
+      flex-direction: column;
+      margin-top:9em;
+  }  
+  .price{
+    margin: -7em 0  0 7em ;
+    position:absolute; 
+  }
+ 
+
+  .img-g{    
+    width:60%;   
+    margin:-5em 0 1em 9em;
+}
+.logo-text{
+    background-color:white;
+   width:82.66vw;
+   padding:5em 0.85em 0em 2em ;
+   margin: 1em 0 0 3em;
+}
+.agro{
+    font-size:1.38em;
+}
+
+.grouptext{
+   display: none;
+}
+
+.iconbtn{
+    display: none;   
+}
+.closedp{
+    margin-top:0;
+
+}
+.closedimg{
+    margin-top:1em;
+}
+
+.closedimg1{
+    margin-left:1em; 
+   
+}
+
+.closedimg2{
+    margin-left:0.55em;
+}
+
+.closedimg4{
+    margin-right:1em;
+}
+.closedimg3{
+   margin-right:1em;
+}
+
+.testimonial{
+    margin-left:1em
+}
+
+.greenbgimg{
+    margin-left:3em;
+}
+
+.exserv{
+max-width:60%;
+}
+.wrap{
+    padding:3em 1em 5em 1em;
+    width:70%;
+    border-radius: 0.33em;
+    background-color: #F6F5F2;
+    margin:2em 2em 0 3.25em;
+}
+
+.section3{
+    flex-direction: column;
+    margin-left:0.25em;
+    margin-bottom:1em;
+}
+
+.lclosed1{
+    font-size:1.35em;
+    color:#6E7673;
+  }
+  
+  .l-bold{
+  font-size:1.55em;
+  color:#255946;
+  margin-right:1em;
+  }
+  
+  .lpara{
+      max-width:30em;
+      margin-top:1em;
+      color:#6E7673;
+      font-size:0.95em;
+      line-height: 15px;
+  }
+  
+.lead{
+ width:80px;
+}
+ .footer, .logowrap, .wrap3, .l-evidence, .wrap1,.agric, .closebtn{
+    display: none;
+}
+  
+}
+
+@media only screen and (max-width: 768px){
     body{
         overflow-x: hidden;
     } 
@@ -753,9 +1014,62 @@ max-width:60%;
     display: none;
 }
 }
+@media only screen and (max-width:540px){
+  .gallery{
+      flex-direction: column;
+  }
+
+  .gallery1{
+      width:none;
+  }
 
 
-@media only screen and (max-width: 480px) {
+  .gallery1,.gallery3{
+  margin-top:7em;
+  margin-left:3.65em;
+  margin-bottom:0.15em;
+  border-radius: 2em;
+  width:80%;
+}
+
+.gallery2 {
+  width:110%;
+  display:block;
+  margin: 7em 0 1em 3.65em;
+}
+
+.gallery3{
+  width:110%;
+  margin-bottom:4em;
+}
+
+.gallerybtn{
+  margin:22em -29em 19em;
+  color:#255946;
+  padding:1.05em 8em;
+  border:none;
+  border-radius: 0.25em;
+  margin-bottom:5em;
+  position:absolute;
+}
+
+.closedarrow{
+    display:none;
+}
+.price{
+    margin: -10em 0 9em;
+    position:absolute; 
+  }
+
+
+  .img-g{    
+    width:60%;   
+    margin:-5em 0 1em 5em;
+}
+
+}
+
+@media only screen and (max-width: 480px){
     body{
         overflow-x: hidden;
     } 
@@ -1003,11 +1317,128 @@ max-width:60%;
 .lead{
  width:80px;
 }
- .footer, .logowrap, .wrap3, .l-evidence, .wrap1,.agric, .closebtn{
+ .footer, .logowrap, .wrap3, .l-evidence, .wrap1,.agric, .closebtn,.closedarrow{
     display: none;
 }
     
 }
+@media only screen and (max-width:280px){
+    
+      .logotext{
+        font-size: 1rem;
+        color:#255946;
+        font-weight: 600;
+  
+    }
+
+  .head-icon{
+    display:none;
+}
+    
+    .navlink{
+        margin-left:1em;
+    }
+    .agrikom{
+        width:50%;
+        margin-left:1.15em;
+    }
+    
+      .base{
+        background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url(Images/base.png) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        opacity:90%;
+        width:100vw;
+        height:75vh;
+        padding:7em 3em;
+      }
+
+      .baseh1{
+        font-size:1.55rem;
+        max-width: none;
+        display:block;
+        margin:1em auto; 
+    }
+
+
+    .basep1,.basep2{
+        margin:auto;
+        font-size:1.05rem;
+        display:block;
+        color:white;
+    }
+
+    .basebtn{
+        padding:1em 4em;
+        background-color:#F7C35F;
+        border:none;
+        margin: 2em auto;
+        color:white;
+        border-radius: 0.25em;
+    }
+    .basebtn{
+        padding:1em 4em;
+        background-color:#F7C35F;
+        border:none;
+        margin: 2em auto;
+        color:white;
+        border-radius: 0.25em;
+    }
+
+    .gallery{
+        flex-direction: column;
+    }
+
+    .gallery1{
+        width:none;
+    }
+
+
+    .gallery1,.gallery3{
+    margin-top:7em;
+    margin-left:1.65em;
+    margin-bottom:0.15em;
+    border-radius: 2em;
+    width:80%;
+}
+
+.gallery2 {
+    width:110%;
+    display:block;
+    margin: 7em 0 1em 1.65em;
+}
+
+.gallery3{
+    width:110%;
+    margin-bottom:4em;
+}
+
+.gallerybtn{
+    margin:12em -16em 12em;
+    color:#255946;
+    padding:1.05em 4em;
+    border:none;
+    border-radius: 0.25em;
+    margin-bottom:5em;
+    position:absolute;
+}
+
+  .machine{
+      flex-direction: column;
+      margin-top:9em;
+  }  
+  .price{
+    margin: -10em 0 6em;
+    position:absolute; 
+  }
+ 
+
+   
+    
+}
+
 @media screen and (device-aspect-ratio: 40/71) {
     .base{
         background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url(Images/base.png) no-repeat center center fixed; 
